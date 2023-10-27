@@ -55,7 +55,7 @@ namespace FrmView
 
         private Vehiculo CrearVehiculo()
         {
-
+           //Creo que hay un problema con el ComboBox desde el diseño.
             if (this.cmbTipo.SelectedItem.ToString() == "Camioneta")
             { 
    
