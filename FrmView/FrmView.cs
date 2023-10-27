@@ -17,6 +17,7 @@ namespace FrmView
             this.cmbTipo.Items.Add("Automovil");
             this.cmbTipo.Items.Add("Camioneta");
             this.cmbTipo.Items.Add("Moto");
+            this.cmbTipo.SelectedIndex = 1;
 
         }
 
