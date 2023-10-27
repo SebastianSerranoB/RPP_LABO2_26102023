@@ -55,8 +55,23 @@ namespace FrmView
         private Vehiculo CrearVehiculo()
         {
 
-            
-            switch (cmbTipo.SelectedItem.ToString())
+            if (this.cmbTipo.SelectedItem.ToString() == "Camioneta")
+            { 
+   
+                    return new Camioneta(EPropulsion.Hibrida, false);
+            }
+            else if  (this.cmbTipo.SelectedItem.ToString() == "Moto")
+            {
+                return new Moto(EPropulsion.Electrica);
+            }
+            else
+            {
+                return new Automovil();
+            }
+
+
+
+            /*    switch (cmbTipo.SelectedItem.ToString())
             {
                 case "Automovil":
                   
@@ -69,10 +84,12 @@ namespace FrmView
               
                 case "Moto":
                     return new Moto(EPropulsion.Electrica);
+
+                
                   
             }
 
-            return new Automovil();
+            return new Automovil();*/
         }
 
 
