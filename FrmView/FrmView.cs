@@ -1,10 +1,15 @@
+using Entidades;
+
 namespace FrmView
 {
     public partial class FrmView : Form
     {
+        private Fabrica fabrica;
         public FrmView()
         {
             InitializeComponent();
+            this.InicializarFabrica();
+            
         }
 
         private void FrmView_Load(object sender, EventArgs e)
@@ -15,6 +20,53 @@ namespace FrmView
 
         }
 
-       
+        private void btnFabricar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void InicializarFabrica()
+        {
+            fabrica = new Fabrica(10);
+            Camioneta camioneta = new Camioneta(EPropulsion.Electrica, true);
+            fabrica =  fabrica + camioneta;
+    
+        }
+        private void Refrescar()
+        {
+            this.cmbTipo.DataSource = null;
+            this.cmbTipo.DataSource = this.fabrica.Vehiculos;
+        }
+
+        private Vehiculo CrearVehiculo()
+        {
+
+            
+            switch (cmbTipo.SelectedItem.ToString())
+            {
+                case "Automovil":
+                  
+                    return new Automovil();
+
+              
+                case "Camioneta":
+                    return new Camioneta(EPropulsion.Hibrida, false);
+                   
+              
+                case "Moto":
+                    return new Moto(EPropulsion.Electrica);
+                  
+            }
+
+            return new Automovil();
+        }
+
+
     }
 }

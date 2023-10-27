@@ -69,6 +69,7 @@
             this.btnFabricar.TabIndex = 2;
             this.btnFabricar.Text = "Fabricar";
             this.btnFabricar.UseVisualStyleBackColor = true;
+            this.btnFabricar.Click += new System.EventHandler(this.btnFabricar_Click);
             // 
             // btnEliminar
             // 
@@ -78,6 +79,7 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblTipo
             // 
