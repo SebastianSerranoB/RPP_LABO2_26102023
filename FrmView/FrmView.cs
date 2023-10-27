@@ -49,8 +49,8 @@ namespace FrmView
         }
         private void Refrescar()
         {
-            this.cmbTipo.DataSource = null;
-            this.cmbTipo.DataSource = this.fabrica.Vehiculos;
+            this.lstVehiculos.DataSource = null;
+            this.lstVehiculos.DataSource = this.fabrica.Vehiculos;
         }
 
         private Vehiculo CrearVehiculo()
