@@ -22,20 +22,23 @@ namespace FrmView
 
         private void btnFabricar_Click(object sender, EventArgs e)
         {
-
+            this.fabrica = this.fabrica + this.CrearVehiculo();
+            this.Refrescar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+          //  this.fabrica = this.fabrica - this.lstVehiculos.SelectedItem;
+            this.Refrescar();
 
         }
 
 
         private void InicializarFabrica()
         {
-            fabrica = new Fabrica(10);
+            this.fabrica = new Fabrica(10);
             Camioneta camioneta = new Camioneta(EPropulsion.Electrica, true);
-            fabrica =  fabrica + camioneta;
+            this.fabrica = this.fabrica + camioneta;
     
         }
         private void Refrescar()
