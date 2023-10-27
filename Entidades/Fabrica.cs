@@ -37,7 +37,7 @@ namespace Entidades
             if (fabrica is not null && vehiculo is not null)
             {
                
-                if (fabrica.Vehiculos.Count < fabrica.capacidad)
+                if (fabrica.vehiculos.Count < fabrica.capacidad)
                 {
                     fabrica.vehiculos.Add(vehiculo);
                     return fabrica;
