@@ -28,7 +28,12 @@ namespace FrmView
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-          //  this.fabrica = this.fabrica - this.lstVehiculos.SelectedItem;
+            if (this.lstVehiculos.SelectedItem != null)
+            {
+                Vehiculo vehiculoSeleccionado = (Vehiculo)this.lstVehiculos.SelectedItem;
+                this.fabrica = this.fabrica - (Vehiculo)this.lstVehiculos.SelectedItem;
+            }
+            
             this.Refrescar();
 
         }
