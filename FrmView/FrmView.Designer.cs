@@ -46,7 +46,7 @@
             "Automovil",
             "Camioneta",
             "Moto"});
-            this.cmbTipo.Location = new System.Drawing.Point(602, 56);
+            this.cmbTipo.Location = new System.Drawing.Point(656, 56);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(176, 23);
             this.cmbTipo.TabIndex = 0;
@@ -58,12 +58,12 @@
             this.lstVehiculos.ItemHeight = 15;
             this.lstVehiculos.Location = new System.Drawing.Point(12, 79);
             this.lstVehiculos.Name = "lstVehiculos";
-            this.lstVehiculos.Size = new System.Drawing.Size(568, 364);
+            this.lstVehiculos.Size = new System.Drawing.Size(616, 394);
             this.lstVehiculos.TabIndex = 1;
             // 
             // btnFabricar
             // 
-            this.btnFabricar.Location = new System.Drawing.Point(602, 310);
+            this.btnFabricar.Location = new System.Drawing.Point(664, 310);
             this.btnFabricar.Name = "btnFabricar";
             this.btnFabricar.Size = new System.Drawing.Size(168, 65);
             this.btnFabricar.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(602, 381);
+            this.btnEliminar.Location = new System.Drawing.Point(664, 381);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(168, 57);
             this.btnEliminar.TabIndex = 3;
@@ -94,9 +94,9 @@
             // pcbFabrica
             // 
             this.pcbFabrica.Image = ((System.Drawing.Image)(resources.GetObject("pcbFabrica.Image")));
-            this.pcbFabrica.Location = new System.Drawing.Point(633, 162);
+            this.pcbFabrica.Location = new System.Drawing.Point(708, 104);
             this.pcbFabrica.Name = "pcbFabrica";
-            this.pcbFabrica.Size = new System.Drawing.Size(70, 83);
+            this.pcbFabrica.Size = new System.Drawing.Size(70, 152);
             this.pcbFabrica.TabIndex = 5;
             this.pcbFabrica.TabStop = false;
             // 
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(861, 505);
             this.Controls.Add(this.pcbFabrica);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.btnEliminar);
